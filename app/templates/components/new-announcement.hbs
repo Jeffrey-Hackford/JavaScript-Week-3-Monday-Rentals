@@ -1,0 +1,12 @@
+<form>
+  <div class="form-group">
+    <label for="Name">Name</label>
+    {{input value=name id="name"}}
+  </div>
+  <div class="form-group">
+    <label for="Message">Message</label>
+    {{input value=message id="message"}}
+  </div>
+  <button {{action 'save4'}}>Save</button>
+</form>
+{{#link-to 'index'}}Home{{/link-to}}

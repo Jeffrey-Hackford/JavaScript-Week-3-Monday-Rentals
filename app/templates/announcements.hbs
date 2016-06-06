@@ -1,0 +1,8 @@
+{{#each model as |announcement|}}
+   <h4>{{announcement.name}}</h4>
+   {{announcement.message}}
+   <button {{action 'delete' announcement}}>Delete</button>
+   <br><br>
+{{/each}}
+
+{{new-announcement save5="save6"}}
